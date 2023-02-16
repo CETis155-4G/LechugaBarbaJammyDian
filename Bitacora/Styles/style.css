@@ -1,0 +1,48 @@
+/*Selector etiqueta <HEADER>. Los cambios sólo le afectaran a esa etiqueta.*/
+header{
+    /*Fuente de la letra*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*Tamaño de la fuente a 16px.*/
+    font-size: 16px;
+    /*Color de la fuente o texto.*/
+    color: rgb(255, 255, 255);
+    /*Color de fondo usando las medidas o reglas RGB (Red, Green, Blue como colores base).*/
+    background-color: rgb(36, 36, 36);
+    /*Relleno que se crea alrededor de los bordes del header. Todos sus lados tienen el tamaño de 3px.*/
+    padding: 3px;
+}
+
+/*Selector etiqueta <BODY>. Los cambios sólo le afectaran a esa etiqueta.*/
+body{
+    /*El color de fondo de la etiqueta susodicha cambiara a unos un tanto grisaceo.*/
+    background-color: rgb(241, 241, 241);
+}
+
+/*Selector etiqueta <H3>. Los cambios sólo le afectaran a esa etiqueta.*/
+h3{
+    /*Fuente de la letra.*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*Tamaño de la fuente a un tamaño absoluto que equivale a 32px.*/
+    font-size:xx-large;
+}
+
+/*Selector etiqueta <P>. Los cambios sólo le afectaran a esa etiqueta.*/
+p{
+    /*Fuente de la letra.*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*Tamaño de la letra.*/
+    font-size: 20px;
+    /*Tipo de alineado: centrado.*/
+    text-align: center;
+}
+
+/*Selector etiqueta <P> pero esta vez que contenga la clase "fecha". Los cambios sólo le afectaran a esa etiqueta
+que contenga la palabra "fecha".*/
+p.fecha{
+    /*Texto alineado a la derecha.*/
+    text-align: right;
+    /*Tamaño de la fuente*/
+    font-size: 20px;
+    /*Opacidad de letra de 0.5 (transparencia)*/
+    opacity: 0.5;
+}

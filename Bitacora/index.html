@@ -14,184 +14,222 @@
 
     <!--Este contiene TODO el cuerpo de la pagina, o sea, todo lo que abarca la página web. Solo se usa uno.-->
     <body>
-        <!--H1 que afectará al tamaño del texto de la etiqueta "<HEADER>" que contiene un alineado al centro.-->
+        <!--Encabezado de la pagina-->
         <header>
-            <h1 align="center">
-                Bitacora de clase
-            </h1>
+            <!--Titulos-->
+            <h1>Bitacora de Clase</h1>
+            <h6>Lechuga Barba Jammy Dian</h6>
         </header>
-    
-        <!--H4 que afectará al tamaño de la etiqueta "<P>" que contiene una fecha y alineado a la derecha.-->
-        <h4>
-            <!--La etiqueta "<P>" ahora conlleva una clase llamada "fecha" que se podría utilizar para especificar
-            mejor que acciones o diseños implementar a la etiqueta desde CSS.-->
-            <p class="fecha">
-                01/02/23
-            </p>
-        </h4>
-    
-        <!--H3 que afectará al tamaño de la etiqueta "<P>" que contiene un alineado al centro con el titulo.-->
-        <h3>
-            <p align="center">
-                Lenguaje HTML
-            </p>
-        </h3>
 
-        <!--Los parrafos contienen un alineado "Justify" que provoca que el texto no se vea desacomodado o vaya más allá
-        de la ventana, o sea, se salga de lugar-->
-        <p align="justify">
-            HTML es un programa de tipeado con la estructura de un lenguaje de programacion, pero que en sí, no funciona como uno. Tal como su 
-            nombre indica <strong>Hypertext Marking Language</strong> o en español <strong>Lenguaje Marcado de Hipertexto</strong> solo es un 
-            idioma de marcado. Su versión más actualizada que es HTML5 es una versión estándar del programa, con estandar quiere decir que es
-            sólo el patrón de referencia; sin embargo, no es un programa profesional. Se maneja a base de etiquetas y sirve principalmente para 
-            el diseño de paginas web junto con CSS y Javascript.
-        </p>    
-        <p align="justify">
-            El significado de sus siglas refiere a que, en primera, <strong>HyperText</strong> que es un "hipertexto", es basicamente un texto 
-            que enlaza a otros contenidos ya sean, sitios web, videos, citas.
-            <strong>Markup</strong> son las etiquetas con las que hace funcionar el programa, cuyas etiquetas comienzan un parrafo, construyen 
-            ese parrafo y se cierra. Y finalmente <strong>Language</strong> es porque, sencillamente, HTML es un lenguaje.
-        </p>
-        <p align="justify">
-            HTML maneja un "esqueleto" o estructura que se conforman mediante el siguiente orden de etiquetas basico: html, head, body, footer. 
-        </p>
-        <!--Imagen centrada.-->
-        <center>
-            <!--Ubicación de la imagen, pero con un atributo de titulo que aparece en forma de cuadro cuando pones el cursor encima.-->
-            <img src="Imagenes/HTML.png" title="HTML5"/>
-        </center>
+        <!--<aside class="lista-seccion">
+            <div class="tabla-secciones">
+                <h3 class="h3-secciones">Secciones.</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>GitHub</li>
+                    <li>CSS</li>
+                    <li>Como Usar CSS</li>
+                    <li>Recomendaciones sobre Diseño Web</li>
+                </ul>
+            </div>
+        </aside>-->
 
-        <hr> <!-- Separador 02/02/2023 -->
+        <!--Fecha-->
+        <p class="fecha">01/02/2023</p>
+        <!--Secciones. Sirven para crear separadores que tengan que ver con lo que se relata.-->
+        <section>
+            <!--Una etiqueta div refiere a divisones entre bloques y funciona para tener un mejor diseño desde el css y ubicar mejor los bloques.-->
+            <div class="seccion-html">
+                <!--Subtitulos-->
+                <h1 class="subtitulos">
+                    Lenguaje HTML
+                </h1>
+                <!--Saltos de Linea-->
+                <br><br>
+                <!--Parrafos con atributo class. Sirven para especificar una o más clases de un elemento.-->
+                <p class="texto"> 
+                    HTML es un programa de tipeado con la estructura de un lenguaje de programacion, pero que en sí, no funciona como uno. Tal como su 
+                    nombre indica <strong>Hypertext Marking Language</strong> o en español <strong>Lenguaje Marcado de Hipertexto</strong> solo es un 
+                    idioma de marcado. Su versión más actualizada que es HTML5 es una versión estándar del programa, con estandar quiere decir que es
+                    sólo el patrón de referencia; sin embargo, no es un programa profesional. Se maneja a base de etiquetas y sirve principalmente para 
+                    el diseño de paginas web junto con CSS y Javascript.
+                    <br><br>
+                    El significado de sus siglas refiere a que, en primera, <strong>HyperText</strong> que es un "hipertexto", es basicamente un texto 
+                    que enlaza a otros contenidos ya sean, sitios web, videos, citas.
+                    <strong>Markup</strong> son las etiquetas con las que hace funcionar el programa, cuyas etiquetas comienzan un parrafo, construyen 
+                    ese parrafo y se cierra. Y finalmente <strong>Language</strong> es porque, sencillamente, HTML es un lenguaje.
+                    <br><br>
+                    HTML maneja un "esqueleto" o estructura que se conforman mediante el siguiente orden de etiquetas basico: html, head, body, footer.
+                </p>
 
-        <!--H4 que afecta al parrafo con fecha.-->
-        <h4>
-            <p class="fecha">
-                02/02/23
-            </p>
-        </h4>
+            <!--Cierre de la etiqueta DIV-->
+            </div>
+            <!--Imagen con atributo "source" y "alt". Source refiere al lugar donde se encuentra y alt es un titulo alternativo que aparece cuando tienes
+            el cursor encima.-->
+            <div class="img-html">
+                <img src="Imagenes/HTML.png" alt="HTML">
+            </div>
+        </section>
 
-        <h3>
-            <p align="center">
-                GitHub
-            </p>
-        </h3>
+        <!--Linea Divisora-->
+        <hr>
 
-        <!--Parrafos justificados.-->
-        <p align="justify">
-            Hoy aprendimos a usar GitHub. Es una página que está principalmente diseñada y dirigida a programadores, hecha para subir sus codigos
-            , gestionarlos y actualizarlos. Funciona como un almacenador de trabajos que puedes compartir para cooperar con otros desarrolladores
-            o bien, mantener tus codigos en privado. Los usuarios pueden incluso crear equipos u organizaciones e invitar a otros usuarios.
-        </p>
-        <p align="justify">
-            Principalmente nos enseñaron a crear un nuevo repositorio, que en resumen, es basicamente el almacenador de tus trabajos, conteniendo
-            todos y cada uno de estos junto con las versiones de los mismos acorde a lo que actualices. Cada archivo que se suba tiene que traer
-            consigo su versión junto con la descripción del mismo en donde se redacte qué fue lo que hicimos en cada actualizacion del codigo. GitHub
-            muestra, en lineas rojas, las tiras que fueron removidas y en verde lo nuevo que implementó el usuario.
-        </p>
-        <p align="justify">
-            Volvimos a repasar el tema de las metodologias, una de ellas Cascada y su funcionamiento.
-        </p>
-        <!--Imagen centrada.-->
-        <center>
-            <!--Ubicación de la imagen que contiene un titulo. Además, un ancho de 200-->
-            <img src="Imagenes/GitHub.png" title="Logo de GitHub" width="200"/>
-        </center>
+        <!--Fecha-->
+        <p class="fecha">02/02/2023</p>
+        <!--Seccion GITHUB-->
+        <section>
+            <!--Una etiqueta div refiere a divisones entre bloques.-->
+            <div class="seccion-github">
+                <!--Subtitulos-->
+                <h1 class="subtitulos">
+                    GitHub
+                </h1>
+                <!--Parrafos con atributo class. Sirven para especificar una o más clases de un elemento.-->
+                <p class="texto"> 
+                    Hoy aprendimos a usar GitHub. Es una página que está principalmente diseñada y dirigida a programadores, hecha para subir sus codigos
+                    , gestionarlos y actualizarlos. Funciona como un almacenador de trabajos que puedes compartir para cooperar con otros desarrolladores
+                    o bien, mantener tus codigos en privado. Los usuarios pueden incluso crear equipos u organizaciones e invitar a otros usuarios.
+                    <!--Saltos de Linea-->
+                    <br><br>
+                    Principalmente nos enseñaron a crear un nuevo repositorio, que en resumen, es basicamente el almacenador de tus trabajos, conteniendo
+                    todos y cada uno de estos junto con las versiones de los mismos acorde a lo que actualices. Cada archivo que se suba tiene que traer
+                    consigo su versión junto con la descripción del mismo en donde se redacte qué fue lo que hicimos en cada actualizacion del codigo. GitHub
+                    muestra, en lineas rojas, las tiras que fueron removidas y en verde lo nuevo que implementó el usuario.
+                    <br><br>
+                    Volvimos a repasar el tema de las metodologias, una de ellas Cascada y su funcionamiento.
+                </p>
+            </div>
+            <!--Imagen con atributo "source" y "alt". Source refiere al lugar donde se encuentra y alt es un titulo alternativo que aparece cuando tienes
+            el cursor encima.-->
+            <div class="img-github">
+                <img src="Imagenes/GitHub.png" alt="GitHub" width="180">
+            </div>
+        </section>
 
-        <hr> <!-- Separador 08/02/2023 -->
+        <hr>
 
-        <!--Encabezados.-->
-        <h4>
-            <p class="fecha">
-                08/02/23
-            </p>
-        </h4>
+        <!--Fecha-->
+        <p class="fecha">08/02/2023</p>
+        <!--Seccion CSS-->
+        <section>
+            <!--Una etiqueta div refiere a divisones entre bloques.-->
+            <div class="seccion-css">
+                <!--Subtitulos-->
+                <h1 class="subtitulos">
+                    Lenguaje CSS
+                </h1>
+                <!--Parrafos con atributo class. Sirven para especificar una o más clases de un elemento.-->
+                <p class="texto">
+                    CSS (<strong>Cascading Style Sheets</strong>) es un lenguaje modelado o un lenguaje de diseño gráfico que en español
+                    refiere a "hojas estilo cascada" y se le denomina así porque las caracteristicas se aplican de arriba a abajo. Es un
+                    lenguaje que complementa al tipado antes mencionado HTML y principalmente sirve como un idioma que nos permite darle
+                    una mejor interfaz a nuestra página web desde el uso de colores, tipo de fuente, tamaños, etc.
+                    <!--Saltos de Linea-->
+                    <br><br>
+                    Una vez entendiendo el concepto del lenguaje CSS, el maestro nos pidió analizar la interfaz de Gmail para en parte
+                    comprender que o cuantas cajas conlleva la pagina, ademas de el cuidado uso de colores que creo fue visto desde un lado más teorico.
+                    El modelo de caja en CSS define figuras rectangulares, incluyendo su relleno y margenes.
+                </p>
+            </div>
+            <!--Imagen con atributo "source" y "alt". Source refiere al lugar donde se encuentra y alt es un titulo alternativo que aparece cuando tienes
+            el cursor encima.-->
+            <div class="img-css">
+                <img src="Imagenes/CSS3.png" alt="CSS" width="160">
+            </div>
+        </section>
 
-        <h3>
-            <p align="center">
-                CSS
-            </p>
-        </h3>
+        <hr>
 
-        <!--Parrafos justificados.-->
-        <p align="justify">
-            CSS (<strong>Cascading Style Sheets</strong>) es un lenguaje modelado o un lenguaje de diseño gráfico que en español
-            refiere a "hojas estilo cascada" y se le denomina así porque las caracteristicas se aplican de arriba a abajo. Es un
-            lenguaje que complementa al tipado antes mencionado HTML y principalmente sirve como un idioma que nos permite darle
-            una mejor interfaz a nuestra página web desde el uso de colores, tipo de fuente, tamaños, etc.
-        </p>
+        <!--Fecha-->
+        <p class="fecha">09/02/2023</p>
+        <!--Seccion Como-usar-CSS-->
+        <section>
+            <!--Una etiqueta div refiere a divisones entre bloques.-->
+            <div class="seccion-como-usar-css">
+                <!--Subtitulos-->
+                <h1 class="subtitulos">
+                    Como usar CSS
+                </h1>
+                <!--Parrafos con atributo class. Sirven para especificar una o más clases de un elemento.-->
+                <p class="texto"> 
+                    Anteriormente habiamos visto como funcionaba CSS. En esta clase aprendimos y aplicamos algunas de sus funciones.
+                    Algunas de ellas fueron: cambiar el tamaño de la fuente, asociar enlaces de internet (o referencias), cambiar el
+                    color de los parrafos; lo que es un selector, propiedad y valor de propiedad. Cómo crear bordes, cómo seleccionar
+                    varios elementos para al final tener una idea de cómo es crear un diseño para una página web.
+                    <!--Saltos de Linea-->
+                    <br><br>
+                    CSS se maneja de selectores, que escogen ciertas etiquetas que incluimos en el HTML, en incluso clases que pueden
+                    tener esas mismas etiquetas. Por ejemplo: <strong>el header, body, h1, p</strong>, etc. Los atributos de cada etiqueta
+                    se ponen dentro de llaves y a traves de ellas es cuando puedes diseñar el tamaño de letra, fuentes, agregar bordes
+                    y distintos tipos de herramientas que ayudaran  a darle un enfoque más detallado a tu pagina web.
+                    <br><br>
+                    Conocimos una página web que se llama "Bootstrap" y sirve principalmente como apoyo para la creación de una pagina
+                    web.
+                </p>
+            </div>
+        </section>
 
-        <p align="justify">
-            Una vez entendiendo el concepto del lenguaje CSS, el maestro nos pidió analizar la interfaz de Gmail para en parte
-            comprender que o cuantas cajas conlleva la pagina, ademas de el cuidado uso de colores que creo fue visto desde un lado más teorico.
-            El modelo de caja en CSS define figuras rectangulares, incluyendo su relleno y margenes.
-        </p>
+        <hr>
 
-        <center>
-             <!--Ubicación de la imagen que contiene un titulo. Además, un ancho de 180-->
-            <img src="Imagenes/CSS3.png" title="CSS" width="180"/>
-        </center>
+        <!--Fecha-->
+        <p class="fecha">15/02/2023</p>
+        <!--Seccion RECOMENDACIONES-->
+        <section>
+            <!--Una etiqueta div refiere a divisones entre bloques.-->
+            <div class="seccion-recomendaciones">
+                <!--Subtitulos-->
+                <h1 class="subtitulos">
+                    Recomendaciones sobre Diseño Web
+                </h1>
+                <!--Parrafos con atributo class. Sirven para especificar una o más clases de un elemento.-->
+                <p class="texto"> 
+                    En clases, el profe paso a 5 personas a mostrar mediante conferencia el diseño de su página web y a base de ello
+                    darnos algunas sugerencias. Algunas que recuerdo son que: no debemos usar colores que sean muy agobiantes para la vista
+                    (colores muy fuertes), usar un tipo de imagenes que tengan fondo transparente, darle un toque más serio como si lo 
+                    fueramos a mostrar a alguna empresa por ejemplo, no tener los parrafos centrados sino justificados, que no se salgan
+                    del margen, usar un tamaño de fuente más apto para el usuario; que no sea imposible de leer. Tener un enfoque más minimalista
+                    en cuanto a diseño se trata: no poner una gran variedad de colores o imagenes, ni cosas que llenen exageradamente de detalles, sino
+                    que se vea simple y agradable a la vista.
+                </p>
+            </div>
+        </section>
 
-        <hr> <!-- Separador 09/02/2023 -->
+        <hr>
 
-         <!--Encabezados.-->
-        <h4>
-            <p class="fecha">
-                09/02/23
-            </p>
-        </h4>
+        <!--Fecha-->
+        <p class="fecha">16/02/2023</p>
+        <!--Seccion JAVASCRIPT-->
+        <section>
+            <!--Una etiqueta div refiere a divisones entre bloques.-->
+            <div class="seccion-javascript">
+                <!--Subtitulos-->
+                <h1 class="subtitulos">
+                    Lenguaje JavaScript
+                </h1>
+                <!--Parrafos con atributo class. Sirven para especificar una o más clases de un elemento.-->
+                <p class="texto"> 
+                    Las 3 bases principales en la elaboración del diseño web es HTML, CSS y finalmente el lenguaje que da vida a nuestro programa: JavaScript.
+                    JavaScript <strong>SI</strong> es un lenguaje de programacion e inicialmente sirve para darle dinamismo a nuestra web desde animaciones,
+                    controlar multimedias, scrolling, etc. Se ejecuta desde el lado del cliente y se usa para estilizar el cómo se comportan las paginas cuando
+                    ocurre un evento.
+                    <br><br>
+                    JavaScript cuenta con un tipado debil. Se refiere a que es muy permisivo en cuanto a las variables declaradas y sintaxis.
+                </p>
+            </div>
+            <!--Imagen con atributo "source" y "alt". Source refiere al lugar donde se encuentra y alt es un titulo alternativo que aparece cuando tienes
+            el cursor encima.-->
+            <div class="img-javascript">
+                <img src="Imagenes/JavaScript.png" alt="Javascript" width="180">
+            </div>
+        </section>
 
-        <h3>
-            <p align="center">
-                Como usar CSS
-            </p>
-        </h3>
 
-        <!--Texto justificado.-->
-        <p align="justify">
-            Anteriormente habiamos visto como funcionaba CSS. En esta clase aprendimos y aplicamos algunas de sus funciones.
-            Algunas de ellas fueron: cambiar el tamaño de la fuente, asociar enlaces de internet (o referencias), cambiar el
-            color de los parrafos; lo que es un selector, propiedad y valor de propiedad. Cómo crear bordes, cómo seleccionar
-            varios elementos para al final tener una idea de cómo es crear un diseño para una página web.
-        </p>
+        <!--Pie de Pagina con nombre de la organizacion.-->
+        <footer class="pie-pagina">
+            <h2 class="organizacion">Cetis155</h2>
+        </footer>
 
-        <p>
-            CSS se maneja de selectores, que escogen ciertas etiquetas que incluimos en el HTML, en incluso clases que pueden
-            tener esas mismas etiquetas. Por ejemplo: <strong>el header, body, h1, p</strong>, etc. Los atributos de cada etiqueta
-            se ponen dentro de llaves y a traves de ellas es cuando puedes diseñar el tamaño de letra, fuentes, agregar bordes
-            y distintos tipos de herramientas que ayudaran  a darle un enfoque más detallado a tu pagina web.
 
-        </p>
-
-        <p>
-            Conocimos una página web que se llama "Bootstrap" y sirve principalmente como apoyo para la creación de una pagina
-            web
-        </p>
-
-        <hr> <!-- Separador 15/02/2023 -->
-
-         <!--Encabezados.-->
-        <h4>
-            <p class="fecha">
-                15/02/23
-            </p>
-        </h4>
-
-        <h3>
-            <p align="center">
-                Recomendaciones sobre Diseño Web
-            </p>
-        </h3>
-
-        <!--Texto justificado.-->
-        <p align="justify">
-            En clases, el profe paso a 5 personas a mostrar mediante conferencia el diseño de su página web y a base de ello
-            darnos algunas sugerencias. Algunas que recuerdo son que: no debemos usar colores que sean muy agobiantes para la vista
-            (colores muy fuertes), usar un tipo de imagenes que tengan fondo transparente, darle un toque más serio como si lo 
-            fueramos a mostrar a alguna empresa por ejemplo, no tener los parrafos centrados sino justificados, que no se salgan
-            del margen, usar un tamaño de fuente más apto para el usuario; que no sea imposible de leer. Tener un enfoque más minimalista
-            en cuanto a diseño se trata: no poner una gran variedad de colores o imagenes, ni cosas que llenen exageradamente de detalles, sino
-            que se vea simple y agradable a la vista.
-        </p>
     <!--Cierre de la etiqueta "<BODY>"-->
     </body>
 

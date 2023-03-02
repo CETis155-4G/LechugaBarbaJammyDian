@@ -1,0 +1,99 @@
+
+/*Selecciona todo*/
+*{
+    /*Margen y relleno del 0% lo que evitará que todo el html tenga algun tipo de margen o relleno tal cual*/
+    margin:0% ;
+    padding: 0%;
+    box-sizing: border-box; /*indica cómo se deben calcular las medidas de un elemento*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*fuente de letra en general*/
+    color: rgb(63, 3, 3); /*color de letra principal*/
+}
+
+/*Se llaman a las clases o etiquetas que van a ser afectadas*/
+
+header{
+    font-size: 1cm; /*Tamaño de la fuente*/
+    background-color: #e85f64; /*color de fondo*/
+    height: 60px; /*altura de 60 pixeles*/
+}
+
+.logo{
+    position: absolute; /*Cuando un objeto está absolutamente posicionado es sacado del flujo, como si no formara parte. O sea, se puede acomodar como sea*/
+    color: white;/*Fondo blanco*/
+    top: 8px; /*alto de 8 pixeles*/
+    left: 1cm; /*izquierda a un centimetro*/
+}
+
+/*Etiquetas h1, h2 tiene un relleno de 0.5cm y un alineado al centro*/
+h1, h2{
+    padding: 0.5cm;
+    text-align: center;
+}
+
+/*Tamaño de 1.3cm y 1cm para h2*/
+h1{
+    font-size: 1.3cm;
+}
+
+h2{
+    font-size: 1cm;
+}
+
+/*Alineado al centro*/
+h3{
+    text-align: center;
+}
+
+/*Tamaño de letra de 0.6cm*/
+p{
+    font-size: .6cm;
+}
+
+.contenido{
+    /*Ancho máximo de 1100px. Margen de 40px y automatico del alto y los lados, ancho del 100%*/
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%; /*Ancho del 100%*/
+}
+
+/*Clases a las que afecta o sirven para identificar exactamente donde está la clase a la que queremos afectar especificamente*/
+.mostrador .fila{
+    display: flex; /*nos permite maquetar nuestras páginas web de una manera mucho más fácil*/
+    margin-bottom: 40px; /*Margen de fondo*/
+}
+
+/*Clases a las que afecta o sirven para identificar exactamente donde está la clase a la que queremos afectar especificamente*/
+.mostrador .fila .producto{
+    /*Ancho máximo de 210px. Relleno de 30px y alto de 250px*/
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center; /*texto alineado al centro*/
+    margin: 0 10px; /*Margen del 0x10px*/
+    border-radius: 5px; /*Borde redondeado del 5px*/
+}
+
+/*Clases a las que afecta o sirven para identificar exactamente donde está la clase a la que queremos afectar especificamente*/
+.mostrador .fila .producto img{
+    /*ancho del 100% y margen del 30x0px de los lados y el alto*/
+    width: 100%;
+    margin: 30px 0;
+}
+
+/*Clases a las que afecta o sirven para identificar exactamente donde está la clase a la que queremos afectar especificamente*/
+.mostrador .fila .producto .precio{
+    color: blueviolet; /*color de letra*/
+    font-weight: bold; /*Establece el grosor de cada letra*/
+    font-size: 20px; /*Tamaño de letra*/
+}
+
+footer{
+    background-color: #f24e54; /*color de fondo*/
+    padding: 20px 20px; /*relleno del 20x20px de los lados y el alto*/
+    display: block; /*Un elemento de bloque es un elemento que ocupa el ancho máximo disponible*/
+}

@@ -1,107 +1,129 @@
 
+/*Seleccionar todo*/
 *{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Todo el texto tendra la siguiente fuente*/
 }
 
+/*Llamar a etiqueta header*/
 header{
-    font-size: 1cm;
-    background-color: #e85f64;
-    height: 60px;
-    display: block;
+    font-size: 1cm; /*Tamaño de la fuente a 1 centimetro*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /*Todo texto que corresponda a la etiqueta header tendra la siguiente fuente*/
+    background-color: #e85f64; /*color de fondo*/
+    height: 60px; /*altura de 60 pixeles*/
 }
 
+/*Clase logo*/
 .logo{
-    position: absolute;
-    color: white;
-    top: 8px;
-    left: 1cm;
+    position: absolute; /*Cuando un objeto está absolutamente posicionado es sacado del flujo, como si no formara parte. O sea, se puede acomodar como sea*/
+    color: white; /*Color de letra*/
+    top: 8px; /*Tiene la altura de 8px*/
+    left: 1cm; /*El logo tiene un centimetro de izquierda*/
 }
 
+/*Clase bloque*/
 .bloque{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 900px;
-    height:400px; 
-    background: white;
-    border:solid;
-    border-color: rgb(205, 77, 52);
-    display: block;
+    position: absolute; /*El bloque tiene una posicion absoluta*/
+    top: 55%; /*tiene una altura especifica del 55 por ciento*/
+    left: 50%; /*Y un izquierdo del 50%*/
+    transform: translate(-50%, -50%); /*Este funciona para centrar el bloque al centro de la pagina*/
+    width: 900px; /*Ancho de 900 pixeles*/
+    height:400px; /*Altura de 400 pixeles*/
+    background: white; /*Fondo blanco*/
+    border:solid; /*Borde tipo solido*/
+    border-color: rgb(205, 77, 52); /*Color de borde*/
 }
 
+/*etiqueta body*/
 body {
-    margin: 0;
-    padding: 0;
-    background: rgb(255, 248, 245);
-    height:100vh;
+    margin: 0; /*El body tiene un margen de 0*/
+    padding: 0;/*el body tiene un relleno de 0*/
+    background: rgb(255, 248, 245); /*Fondo*/
+    height:100vh; /*Altura de 100 de porcentaje*/
 }
 
-
+/*Clase de login-title*/
 .login-title{
-    margin: 0%;
-    text-align: center;
-    align-items: center;
-    top: auto;
-    background-color: #fed0d1;
+    margin: 0%;/*tiene un margen de 0*/
+    text-align: center; /*Texto alineado al centro*/
+    background-color: #fed0d1; /*color de fondo*/
 }
 
+/*clase texto-usuario*/
 .texto-usuario{
-    position: absolute;
-    margin: 0%;
-    top: 2cm;
-    text-align: left;
-    margin-left: 1cm;
-    font-family: 'Albert Sans', sans-serif;
+    position: absolute; /*posicion absoluta*/
+    margin: 0%;/*tiene un margen de 0*/
+    top: 2cm; /*altura de 2cm*/
+    text-align: left; /*texto alineado a la izquierda*/
+    margin-left: 1cm; /*margen de 1cm*/
+    font-family: 'Albert Sans', sans-serif; /*Estilo de letra*/
 }
 
+/*clase texto-contraseña*/
 .texto-contraseña{
-    margin: 0%;
-    position: absolute;
-    bottom: 5cm;
-    text-align: left;
-    margin-left: 1cm;
-    font-family: 'Albert Sans', sans-serif;
+    margin: 0%; /*tiene un margen de 0*/
+    position: absolute; /*posicion absoluta*/
+    bottom: 5cm; /*posicion al fondo de 5cm*/
+    text-align: left; /*texto alineado a la izquierda*/
+    margin-left: 1cm; /*Margen del lado izquierdo a un solo cm*/
+    font-family: 'Albert Sans', sans-serif; /*Estilo de letra*/
 }
 
+/*clase bloque-ingreso*/
 .bloque-ingreso{
-    position: relative;
-    padding: 0%;
-    top: 4.5cm;
-    right: 9.5cm;
+    position: relative; /*posicion relativa: la caja o el bloque no se puede salir del flujo al que pertenece*/
+    padding: 0%; /*relleno del 0%*/
+    top: 4.5cm; /*altura del bloque a 4.5cm*/
+    right: 9.5cm; /*posicion 9.5cm a la derecha*/
 }
 
-header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
+/**/
 .texto-respuesta{
-    height: 30px;
-    width: 400px;
+    height: 30px; /*altura de 30px*/
+    width: 400px; /*anchura de 400px*/
+    font-family: Arial, Helvetica, sans-serif; /*Estilo de letra*/
+    font-size: .5cm; /*tamaño de la fuente*/
 }
 
+/*clase input-user*/
 .input-user{
-    position: relative;
-    left: 40px;
-    top: 2cm;
+    position: relative; /*posicion relativa: la caja o el bloque no se puede salir del flujo al que pertenece*/
+    left: 40px; /*posicionado 40px a la izquierda*/
+    top: 2cm; /*posicion de 2cm a lo alto*/
+    font-family: Arial, Helvetica, sans-serif; /*Estilo de letra*/
+    font-size: .5cm; /*tamaño de la letra*/
 }
 
+/*clase input-password*/
 .input-pass{
-    position: relative;
-    left: 40px;
-    top: 4cm;
+    position: relative; /*posicion relativa: la caja o el bloque no se puede salir del flujo al que pertenece*/
+    left: 40px; /*posicionado 40px a la izquierda*/
+    top: 4cm; /*posicion de 4cm a lo alto*/
 }
 
-/*
-componentes para formulario web
-a.paterno
-a.materno
-nombres
-fecha de nacimiento
-pais
-estado
-municipio
-numero (10 digitos)
-correo e. (@)
-password (10 digitos)
-*/
+/*llama a la etiqueta a*/
+a{
+    text-decoration-line: none; /*decoracion en el enlace: ninguna*/
+    color: #e85f64; /*color para la etiqueta*/
+}
+
+/*clase de enlaces-externos*/
+.enlaces-externos{
+    position: absolute; /*posicion absoluta*/
+    right: 2.8cm; /*posicionada 2.8cm a la derecha*/
+    
+}
+
+/*clase de boton de ingreso*/
+.boton-ingreso [type="button"]{
+    position: absolute; /*posicion absoluta*/
+    left: 19cm; /*posicionado 19cm a la izquierda*/
+    top: 1.5cm; /*posicion de 1.5cm a lo alto*/
+    border: none; /*Ningun borde para el boton*/
+    outline: none;
+    background: #e85f64; /*fondo*/
+    color: white; /*color de letra*/
+    border-radius: 20px; /*borde redondeado a 20px*/
+    height: 40px; /*altura de 40px*/
+    width: 200px; /*anchura de 200px*/
+
+}
